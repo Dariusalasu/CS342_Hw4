@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="MyController"
+      fx:id="root"
+      alignment="CENTER">
+    <VBox id="gameOne" alignment="CENTER">
+        <Label text="Jelly Bean Jar"/>
+        <Button id="game-one-button" onAction="#setJBJScene"/>
+    </VBox>
+    <VBox id="gameTwo" alignment="CENTER">
+        <Label text="Rock Paper Scissors" textAlignment="CENTER"/>
+        <Button id="game-two-button" onAction="#setRPSScene"/>
+    </VBox>
+</HBox>
+
+

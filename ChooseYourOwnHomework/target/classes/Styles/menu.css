@@ -1,0 +1,47 @@
+HBox {
+    -fx-background-image: url("../Images/GameBackground.jpg");
+}
+
+.label {
+    -fx-font-size: 30px;
+    -fx-padding: 0 0 10 0;
+    -fx-font-weight: 700;
+}
+
+#gameOne {
+    -fx-alignment: center;
+    -fx-padding: 0 50 0 0;
+}
+
+#game-one-button {
+    -fx-background-image: url("../Images/jelly-bean-jar-animated.gif");
+    -fx-opacity: 0.7;
+    -fx-pref-height: 200px;
+    -fx-pref-width: 200px;
+    -fx-padding: 10 0 0 0;
+}
+
+#game-one-button:hover {
+    -fx-opacity: 1;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}
+
+#gameTwo {
+    -fx-alignment: center;
+    -fx-padding: 0 0 0 50;
+}
+
+#game-two-button {
+    -fx-background-image: url("../Images/rock-paper-scissors-animated.gif");
+    -fx-opacity: 0.7;
+    -fx-pref-height: 200px;
+    -fx-pref-width: 200px;
+    -fx-padding: 10 0 0 0;
+}
+
+#game-two-button:hover {
+    -fx-opacity: 1;
+    -fx-border-color: black;
+    -fx-cursor: hand;
+}

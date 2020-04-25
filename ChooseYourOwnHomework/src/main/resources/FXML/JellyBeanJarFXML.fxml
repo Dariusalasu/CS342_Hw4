@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="MyController"
+      fx:id = "gameroot"
+      styleClass="root">
+
+    <MenuBar>
+        <Menu text="Options">
+            <MenuItem text="Exit" onAction="#mainMenu"/>
+            <MenuItem text="New Game" onAction="#newGameJBJ"/>
+        </Menu>
+    </MenuBar>
+    <VBox id="VBoxComp1">
+        <Label text="Welcome to Jelly Bean Jar"/>
+        <Label fx:id="minMaxLabel"/>
+        <HBox styleClass="HBoxComp">
+            <VBox id="VBoxComp1">
+                <Spinner fx:id="spinnerC" BorderPane.alignment="CENTER" disable="true" opacity="1">
+                    <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory fx:id="spinCVal" min="0" max="1000" initialValue="0"/>
+                    </valueFactory>
+                </Spinner>
+            </VBox>
+            <VBox id="VBoxComp1">
+                <Spinner fx:id="spinnerP" BorderPane.alignment="CENTER" editable="true">
+                    <valueFactory>
+                        <SpinnerValueFactory.IntegerSpinnerValueFactory fx:id="spinPVal" min="0" max="1000" initialValue="0"/>
+                    </valueFactory>
+                </Spinner>
+            </VBox>
+        </HBox>
+        <Button text="Submit Guess" id="guessButton" onAction="#playGuess" translateY="10"/>
+        <Label fx:id="playerLabel" id="labelInfo"/>
+        <Label fx:id="computerLabel" id="labelInfo"/>
+        <Label fx:id="gameLabel" id="labelInfo"/>
+        <HBox styleClass="HBoxComp" translateY="160">
+            <Label fx:id="pScoreLabel" text="Player: 0"/>
+            <Label fx:id="cScoreLabel" text="Computer: 0"/>
+        </HBox>
+    </VBox>
+</VBox>

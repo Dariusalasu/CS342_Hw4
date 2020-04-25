@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="MyController"
+            fx:id = "gameroot"
+            styleClass="root">
+
+    <MenuBar>
+        <Menu text="Options">
+            <MenuItem text="Exit" onAction="#mainMenu"/>
+            <MenuItem text="New Game" onAction="#newGameRPS"/>
+        </Menu>
+    </MenuBar>
+    <VBox id="VBoxComp1">
+        <Label text="Welcome to Rock Paper Scissors"/>
+        <HBox styleClass="HBoxComp">
+            <Button id="rockButton" onAction="#playRock"/>
+            <Button id="paperButton" onAction="#playPaper"/>
+            <Button id="scissorButton" onAction="#playScissor"/>
+        </HBox>
+        <Label fx:id="playerLabel" id="labelInfo"/>
+        <Label fx:id="computerLabel" id="labelInfo"/>
+        <Label fx:id="gameLabel" id="labelInfo"/>
+        <HBox styleClass="HBoxComp" translateY="100">
+            <Label fx:id="pScoreLabel" text="Player: 0"/>
+            <Label fx:id="cScoreLabel" text="Computer: 0"/>
+        </HBox>
+    </VBox>
+</VBox>
+
